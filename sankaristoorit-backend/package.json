@@ -1,0 +1,38 @@
+{
+  "name": "sankaristoorit-backend",
+  "version": "1.0.0",
+  "description": "Sankaristoorit lukuvinkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "start": "node index.js",
+    "start:test": "cross-env PORT=3001 NODE_ENV=test node index.js",
+    "lint": "eslint ."
+  },
+  "author": "TKT sankarikoodaajat 2020",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.13.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.15",
+    "mongoose-unique-validator": "^2.0.3",
+    "node-fetch": "^2.6.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

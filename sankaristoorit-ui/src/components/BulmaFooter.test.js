@@ -1,14 +1,13 @@
 import React from 'react'
 import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
-import Example from './Example'
+import BulmaFooter from './BulmaFooter'
 
 test('renders content', () => {
   const component = render(
-    <Example />
+    <BulmaFooter />
   )
-
   expect(component.container).toHaveTextContent(
-    'Hello world!'
+    'Ohjelmistotuotanto 2020, Helsingin Yliopisto. The source code is licensed MIT.'
   )
 })
